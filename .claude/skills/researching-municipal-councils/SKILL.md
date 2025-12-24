@@ -1,0 +1,16 @@
+---
+name: researching-municipal-councils
+description: Fill municipalities.csv by researching official council livestream/archives and minutes with evidence URLs. Use when cells are ToBeInvestigated or UNKNOWN.
+allowed-tools: Read, Edit, Write, Glob, Grep, WebSearch, WebFetch, Task
+---
+
+# Researching Municipal Councils
+
+## Rules (must)
+- ToBeInvestigated: not checked yet
+- UNKNOWN: checked but cannot confirm
+- YES/NO only with clear evidence
+- If YES then the corresponding URL must be non-empty
+- NO requires checking at least 2–3 routes; write a short audit trail in notes
+- Do not confuse minutes with summaries/newsletters
+- latest_minutes_date must be YYYY-MM-DD or UNKNOWN/ToBeInvestigated
