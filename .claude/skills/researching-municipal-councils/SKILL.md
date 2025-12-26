@@ -15,6 +15,12 @@ allowed-tools: Read, Edit, Write, Glob, Grep, WebSearch, WebFetch, Task
 - Do not confuse minutes with summaries/newsletters
 - latest_minutes_date must be YYYY-MM-DD or UNKNOWN/ToBeInvestigated
 
+## CSV editing (must)
+- Perform municipalities.csv edits inside this skill using Edit/Write/Task; do not dump full CSV into chat.
+- Keep row order; replace only the rows you touch. Append new rows at the end.
+- Preserve column order and header exactly.
+- After edits, run validation if available (e.g., `python scripts/validate_csv.py <csv>`).
+
 ## Completion report (must)
 - After finishing edits to a municipalities.csv, report progress as a percent.
 - Completion = rows with no `ToBeInvestigated` in these fields: live_streaming, recorded_streaming, minutes_published, latest_minutes_date.
